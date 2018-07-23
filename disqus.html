@@ -35,11 +35,9 @@ function getQueryVariable(variable) {
 }
 var disqus_config = function () { 
 	this.page.url = getQueryVariable("url");
+	this.language = en";
 };
 (function() {
-	var disqus_config = function () { 
-  this.language = en";
-};
 	var d = document, s = d.createElement('script');
 	s.src = '//' + getQueryVariable("shortname") + '.disqus.com/embed.js';
 	s.setAttribute('data-timestamp', +new Date());
